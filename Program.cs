@@ -6,6 +6,7 @@ namespace BinaryTreeMathOp
     {
         static void Main(string[] args)
         {
+            ///// Manually creating the Tree since couldnt implement the expression => Tree function
             Node root = new Node { Value = "-" };
 
             root.Left = new Node { Value = "*" };
@@ -26,6 +27,7 @@ namespace BinaryTreeMathOp
             root.Right.Right.Left = new Node { Value = "1" };
 
             var Result = CalculateSubtree(root);
+            Console.WriteLine(Result);
         }
 
         public static bool CheckIsALeafNode(Node node)
